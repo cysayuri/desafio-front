@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+@font-face {
+  font-family: 'Open Sans Regular';
+  src: url(../assets/font/OpenSans-Regular.ttf);
+}
+@font-face {
+  font-family: 'Open Sans Semibold';
+  src: url(../assets/font/OpenSans-Semibold.ttf);
+}
+@font-face {
+  font-family: 'Open Sans Bold';
+  src: url(../assets/font/OpenSans-Bold.ttf);
+}
+@font-face {
+  font-family: 'Open Sans Light';
+  src: url(../assets/font/OpenSans-Light.ttf);
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.title {
+  color: #06539b;
+  font: 40px "Open Sans Light", "Calibri", "sans-serif";
+  padding: 0 150px;
+  position: absolute;
+  margin: 120px 10px;
+}
+
+.header {
+  background-image: url(../assets/images/bg.jpg);
+  height: 590px;
+  background-position-x: right;
+}
+
+.menu {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 150px 0;
+  height: 50px;
+}
+.menu__logo-img {
+  width: 200px;
+}
+.menu__links {
+  display: flex;
+  justify-content: center;
+}
+
+.social__item {
+  margin: 0 7px;
+}
+.social__item-img {
+  width: 35px;
+}

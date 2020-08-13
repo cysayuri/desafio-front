@@ -1,0 +1,24 @@
+// Fonts
+$font-regular: 'Open Sans Regular', 'Calibri', 'sans-serif';
+$font-semibold: 'Open Sans Semibold', 'Calibri', 'sans-serif';
+$font-bold: 'Open Sans Bold', 'Calibri', 'sans-serif';
+$font-light: 'Open Sans Light', 'Calibri', 'sans-serif';
+
+// Colors
+$primary: #06539b;
+$secondary: #f9a937;
+$tertiary: #666668;
+
+// Media Query
+@mixin MQ($size) {
+    @media screen and (max-width: $size) {
+        @content;
+    }
+}
+
+// Sizes
+$XS: 480px;
+$S: 758px;
+$M: 960px;
+$L: 1024px;
+$XL: 1130px;
