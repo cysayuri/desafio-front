@@ -1,3 +1,73 @@
 .content {
+    margin-top: 150px;
+    position: absolute;
+}
 
+.boxes {
+    display: flex;
+    height: 248px;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    width: 950px;
+
+    &__item {
+        border-radius: 5px;
+        margin: 0 20px;
+        
+        &--img {
+            background-image: url(../assets/images/sol.jpg);
+            background-position-x: right;
+            color: #fff;
+            width: 1150px;
+            position: relative;
+        }
+        
+        &--text {
+            background: #fff;
+            color: $tertiary;
+            font: 14px $font-regular;
+            margin: 0;
+            padding: 10px 30px;
+        }
+        
+        &-btn {
+            align-items: center;
+            border: 1px solid $secondary;
+            border-radius: 3px;
+            color: $secondary;
+            display: flex;
+            font: 14px $font-bold;
+            justify-content: space-between;
+            text-decoration: none;
+            text-transform: uppercase;
+            margin-top: 30px;
+            padding: 5px 10px 5px 20px;
+        }
+
+        p {
+            margin: 7px 0 0;
+        }
+    }
+
+    &__desc {
+        bottom: 30px;
+        color: #fff;
+        font: 14px $font-regular;
+        margin: 0 30px;
+        position: absolute;
+    }
+
+    &__title {
+        &--img {
+            font: 26px $font-regular;
+            color: #fff;
+            margin: 20px 0 10px;
+        }
+        
+        &--text {
+            font: 22px $font-semibold;
+            color: $secondary;
+            margin: 20px 0 0;
+        }
+    }
 }

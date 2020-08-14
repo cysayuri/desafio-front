@@ -4,13 +4,11 @@ body {
 }
 
 .wrapper {
-
+    margin: 0 150px;
 }
 
-.title {
-    color: $primary;
-    font: 40px $font-light;
-    padding: 0 150px;
+.container {
     position: absolute;
-    margin: 120px 10px;
+    top: 0;
+    width: -webkit-fill-available;
 }
