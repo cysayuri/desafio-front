@@ -1,73 +1,85 @@
-.content {
-    margin-top: 150px;
-    position: absolute;
-}
-
 .boxes {
     display: flex;
-    height: 248px;
-    justify-content: space-evenly;
     margin: 0 auto;
-    width: 950px;
+    width: 90%;
+    // width: 80%; //depende....??
 
     &__item {
-        border-radius: 5px;
-        margin: 0 20px;
+        border-radius: 3px;
+        font: 14px $font-regular;
         
-        &--img {
-            background-image: url(../assets/images/sol.jpg);
-            background-position-x: right;
+        &--left {
             color: #fff;
-            width: 1150px;
-            position: relative;
         }
         
-        &--text {
+        &--right {
             background: #fff;
             color: $tertiary;
-            font: 14px $font-regular;
-            margin: 0;
+            margin-left: 30px;
             padding: 10px 30px;
         }
-        
-        &-btn {
-            align-items: center;
-            border: 1px solid $secondary;
-            border-radius: 3px;
-            color: $secondary;
-            display: flex;
-            font: 14px $font-bold;
-            justify-content: space-between;
-            text-decoration: none;
-            text-transform: uppercase;
-            margin-top: 30px;
-            padding: 5px 10px 5px 20px;
-        }
-
-        p {
-            margin: 7px 0 0;
-        }
     }
-
+    
+    &__img {
+        position: relative;
+    }
+    
     &__desc {
-        bottom: 30px;
-        color: #fff;
-        font: 14px $font-regular;
+        bottom: 20px;
         margin: 0 30px;
         position: absolute;
     }
-
+    
     &__title {
-        &--img {
+        margin: 20px 0 5px;
+
+        &--left {
             font: 26px $font-regular;
-            color: #fff;
-            margin: 20px 0 10px;
         }
         
-        &--text {
+        &--right {
             font: 22px $font-semibold;
             color: $secondary;
-            margin: 20px 0 0;
         }
+    }
+    
+    &__btn {
+        align-items: center;
+        border: 1px solid $secondary;
+        border-radius: 3px;
+        color: $secondary;
+        display: flex;
+        font: 14px $font-bold;
+        justify-content: space-between;
+        text-decoration: none;
+        text-transform: uppercase;
+        margin-top: 30px;
+        padding: 5px 10px 5px 20px;
+    }
+}
+
+.desc {
+    align-items: center;
+    color: $tertiary;
+    display: flex;
+    font: 20px $font-regular;
+    justify-content: center;
+    margin: 250px auto 0;
+    padding-left: 50px;
+    width: 95%;
+
+    &__text {
+        width: 40%;
+    
+        &-title {
+            color: $primary;
+            font: 35px $font-light;
+            margin-bottom: 30px;
+        }
+    }
+
+    &__image {
+        height: 350px;
+        width: 650px;
     }
 }

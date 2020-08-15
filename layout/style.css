@@ -37,6 +37,10 @@ body {
   position: relative;
 }
 
+.header {
+  height: 650px;
+}
+
 .menu {
   display: flex;
   justify-content: space-between;
@@ -59,42 +63,48 @@ body {
 }
 
 .title {
-  color: #06539b;
+  color: #075db5;
   font: 45px "Open Sans Light", "Calibri", "sans-serif";
   margin: 120px 10px;
 }
 
-.content {
-  margin-top: 150px;
-  position: absolute;
-}
-
 .boxes {
   display: flex;
-  height: 248px;
-  justify-content: space-evenly;
   margin: 0 auto;
-  width: 950px;
+  width: 90%;
 }
 .boxes__item {
-  border-radius: 5px;
-  margin: 0 20px;
+  border-radius: 3px;
+  font: 14px "Open Sans Regular", "Calibri", "sans-serif";
 }
-.boxes__item--img {
-  background-image: url(../assets/images/sol.jpg);
-  background-position-x: right;
+.boxes__item--left {
   color: #fff;
-  width: 1150px;
-  position: relative;
 }
-.boxes__item--text {
+.boxes__item--right {
   background: #fff;
   color: #666668;
-  font: 14px "Open Sans Regular", "Calibri", "sans-serif";
-  margin: 0;
+  margin-left: 30px;
   padding: 10px 30px;
 }
-.boxes__item-btn {
+.boxes__img {
+  position: relative;
+}
+.boxes__desc {
+  bottom: 20px;
+  margin: 0 30px;
+  position: absolute;
+}
+.boxes__title {
+  margin: 20px 0 5px;
+}
+.boxes__title--left {
+  font: 26px "Open Sans Regular", "Calibri", "sans-serif";
+}
+.boxes__title--right {
+  font: 22px "Open Sans Semibold", "Calibri", "sans-serif";
+  color: #f9a937;
+}
+.boxes__btn {
   align-items: center;
   border: 1px solid #f9a937;
   border-radius: 3px;
@@ -107,23 +117,26 @@ body {
   margin-top: 30px;
   padding: 5px 10px 5px 20px;
 }
-.boxes__item p {
-  margin: 7px 0 0;
+
+.desc {
+  align-items: center;
+  color: #666668;
+  display: flex;
+  font: 20px "Open Sans Regular", "Calibri", "sans-serif";
+  justify-content: center;
+  margin: 250px auto 0;
+  padding-left: 50px;
+  width: 95%;
 }
-.boxes__desc {
-  bottom: 30px;
-  color: #fff;
-  font: 14px "Open Sans Regular", "Calibri", "sans-serif";
-  margin: 0 30px;
-  position: absolute;
+.desc__text {
+  width: 40%;
 }
-.boxes__title--img {
-  font: 26px "Open Sans Regular", "Calibri", "sans-serif";
-  color: #fff;
-  margin: 20px 0 10px;
+.desc__text-title {
+  color: #075db5;
+  font: 35px "Open Sans Light", "Calibri", "sans-serif";
+  margin-bottom: 30px;
 }
-.boxes__title--text {
-  font: 22px "Open Sans Semibold", "Calibri", "sans-serif";
-  color: #f9a937;
-  margin: 20px 0 0;
+.desc__image {
+  height: 350px;
+  width: 650px;
 }
