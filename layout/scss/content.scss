@@ -59,17 +59,18 @@
 }
 
 .desc {
-    align-items: center;
+    align-items: flex-start;
     color: $tertiary;
     display: flex;
     font: 20px $font-regular;
     justify-content: center;
     margin: 250px auto 0;
-    padding-left: 50px;
-    width: 95%;
+    padding-left: 100px;
+    width: 90%;
 
     &__text {
-        width: 40%;
+        margin-top: 50px;
+        width: 45%;
     
         &-title {
             color: $primary;
@@ -79,7 +80,10 @@
     }
 
     &__image {
-        height: 350px;
-        width: 650px;
+        width: 55%;
+        
+        &-img {
+            width: 100%;
+        }
     }
 }
