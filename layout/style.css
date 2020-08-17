@@ -171,12 +171,50 @@ body {
 }
 .glide__slide {
   background: #fff;
+  color: #fff;
   width: 150px;
 }
 .glide__slide:nth-child(odd) {
   background: #000;
+  color: #000;
 }
 .glide__arrow {
   border: none !important;
   box-shadow: none !important;
+}
+
+.footer {
+  align-items: center;
+  background: #FFA425;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 160px;
+}
+.footer__desc {
+  align-items: center;
+  display: flex;
+}
+.footer__social {
+  display: flex;
+}
+.footer__social-img {
+  margin: 0 5px;
+}
+.footer__logo {
+  margin-right: 30px;
+  width: 50px;
+}
+.footer__logo-img {
+  width: 100%;
+}
+.footer__text {
+  font: 14px "Open Sans Regular", "Calibri", "sans-serif";
+}
+.footer__text p {
+  margin: 0;
+}
+.footer__text--phone {
+  font: 20px "Open Sans Bold", "Calibri", "sans-serif";
+  margin-top: 10px;
 }

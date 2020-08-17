@@ -1,3 +1,43 @@
 .footer {
+    align-items: center;
+    background: $secondary;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 160px;
+    
+    &__desc {
+        align-items: center;
+        display: flex;
+    }
+    
+    &__social {
+        display: flex;
 
+        &-img {
+            margin: 0 5px;
+        }
+    }
+
+    &__logo {
+        margin-right: 30px;     
+        width: 50px;
+
+        &-img {
+            width: 100%;
+        }
+    }
+
+    &__text {
+        font: 14px $font-regular;
+
+        p {
+            margin: 0;
+        }
+        
+        &--phone {
+            font: 20px $font-bold;
+            margin-top: 10px;
+        }
+    }
 }

@@ -30,10 +30,12 @@
 
     &__slide {
         background: #fff;
+        color: #fff;
         width: 150px;
-
+        
         &:nth-child(odd) {
             background: #000;
+            color: #000;
         }
     }
     
