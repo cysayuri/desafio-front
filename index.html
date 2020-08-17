@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="layout/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.min.css">
     <title>Digital Mind</title>
 </head>
 <body>
@@ -84,10 +86,49 @@
         </div>
     </section>
     
+    <section class="content">
+        <div class="slider">
+            <div class="slider__container">
+                <h3 class="slider__title">Processus dynamicus</h3>
+
+                <div class="glide">
+                    <div class="glide__track" data-glide-el="track">
+                        <ul class="glide__slides">
+                            <li class="glide__slide slider__item">1</li>
+                            <li class="glide__slide slider__item">2</li>
+                            <li class="glide__slide slider__item">3</li>
+                            <li class="glide__slide slider__item">4</li>
+                            <li class="glide__slide slider__item">5</li>
+                            <li class="glide__slide slider__item">6</li>
+                        </ul>
+                    </div>
+                    <div class="glide__arrows" data-glide-el="controls">
+                        <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+                            <img src="./assets/images/seta-esquerda.png" alt="Voltar">
+                        </button>
+                        <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+                            <img src="./assets/images/seta-direita.png" alt="Avançar">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
     <div class="wrapper">
         <section class="footer">
             
         </section>
     </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js"></script>
+    
+    <script>
+        new Glide('.glide', {
+            type: 'carousel',
+            startAt: 0,
+            perView: 7
+        }).mount()
+    </script>
 </body>
 </html>

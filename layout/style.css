@@ -63,7 +63,7 @@ body {
 }
 
 .title {
-  color: #075db5;
+  color: #0354A7;
   font: 45px "Open Sans Light", "Calibri", "sans-serif";
   margin: 120px 10px;
 }
@@ -82,7 +82,7 @@ body {
 }
 .boxes__item--right {
   background: #fff;
-  color: #666668;
+  color: #666;
   margin-left: 30px;
   padding: 10px 30px;
 }
@@ -102,13 +102,13 @@ body {
 }
 .boxes__title--right {
   font: 22px "Open Sans Semibold", "Calibri", "sans-serif";
-  color: #f9a937;
+  color: #FFA425;
 }
 .boxes__btn {
   align-items: center;
-  border: 1px solid #f9a937;
+  border: 1px solid #FFA425;
   border-radius: 3px;
-  color: #f9a937;
+  color: #FFA425;
   display: flex;
   font: 14px "Open Sans Bold", "Calibri", "sans-serif";
   justify-content: space-between;
@@ -120,7 +120,7 @@ body {
 
 .desc {
   align-items: flex-start;
-  color: #666668;
+  color: #666;
   display: flex;
   font: 20px "Open Sans Regular", "Calibri", "sans-serif";
   justify-content: center;
@@ -133,7 +133,7 @@ body {
   width: 45%;
 }
 .desc__text-title {
-  color: #075db5;
+  color: #0354A7;
   font: 35px "Open Sans Light", "Calibri", "sans-serif";
   margin-bottom: 30px;
 }
@@ -142,4 +142,41 @@ body {
 }
 .desc__image-img {
   width: 100%;
+}
+
+.slider {
+  background-image: url(../assets/images/bg-chamada-3.png);
+  background-position-x: center;
+  height: 320px;
+  margin-top: -70px;
+  padding-top: 50px;
+  position: relative;
+}
+.slider__container {
+  margin: auto;
+  width: 85%;
+}
+.slider__title {
+  color: #fff;
+  font: 30px "Open Sans Light", "Calibri", "sans-serif";
+  margin: 35px auto 10px;
+  width: 85%;
+}
+
+.glide__track {
+  margin: 0 80px;
+}
+.glide__slides {
+  height: 150px;
+}
+.glide__slide {
+  background: #fff;
+  width: 150px;
+}
+.glide__slide:nth-child(odd) {
+  background: #000;
+}
+.glide__arrow {
+  border: none !important;
+  box-shadow: none !important;
 }

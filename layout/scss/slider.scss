@@ -1,0 +1,44 @@
+.slider {
+    background-image: url(../assets/images/bg-chamada-3.png);
+    background-position-x: center;
+    height: 320px;
+    margin-top: -70px;
+    padding-top: 50px;
+    position: relative;
+
+    &__container {
+        margin: auto;
+        width: 85%;
+    }
+    
+    &__title {
+        color: #fff;
+        font: 30px $font-light;
+        margin: 35px auto 10px;
+        width: 85%;
+    }
+}
+
+.glide {
+    &__track {
+        margin: 0 80px;
+    }
+
+    &__slides {
+        height: 150px;
+    }
+
+    &__slide {
+        background: #fff;
+        width: 150px;
+
+        &:nth-child(odd) {
+            background: #000;
+        }
+    }
+    
+    &__arrow {
+        border: none !important;
+        box-shadow: none !important;
+    }
+}
