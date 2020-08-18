@@ -158,11 +158,33 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js"></script>
     
     <script>
+        let size;
+        const xx = window.matchMedia("(max-width: 400px)")
+        const xs = window.matchMedia("(max-width: 630px)")
+        const s = window.matchMedia("(max-width: 758px)")
+        const m = window.matchMedia("(max-width: 960px)")
+        const l = window.matchMedia("(max-width: 1024px)")
+        
+        if (xx.matches) {
+            size = 1;
+        } else if (xs.matches) {
+            size = 3;
+        } else if (s.matches) {
+            size = 4;
+        } else if (m.matches) {
+            size = 5;
+        } else if (l.matches) {
+            size = 6;
+        } else {
+            size = 7;
+        }
+        
         new Glide('.glide', {
             type: 'carousel',
             startAt: 0,
-            perView: 7
-        }).mount()
+            perView: size
+        }).mount();
+        
     </script>
 </body>
 </html>

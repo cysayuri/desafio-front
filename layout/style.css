@@ -156,6 +156,11 @@ body {
   margin: auto;
   width: 85%;
 }
+@media screen and (max-width: 758px) {
+  .slider__container {
+    width: 90%;
+  }
+}
 .slider__title {
   color: #fff;
   font: 30px "Open Sans Light", "Calibri", "sans-serif";
@@ -186,14 +191,14 @@ body {
     margin: 0 65px;
   }
 }
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 758px) {
   .glide__track {
-    margin: 0 115px;
+    margin: 0 85px;
   }
 }
 @media screen and (max-width: 480px) {
   .glide__track {
-    margin: 0 75px;
+    margin: 0 65px;
   }
 }
 .glide__slides {
