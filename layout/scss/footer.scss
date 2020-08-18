@@ -6,31 +6,58 @@
     justify-content: space-between;
     padding: 30px 160px;
     
+    @include MQ ($S) {
+        display: block;
+        padding: 30px 0;
+    }
+    
     &__desc {
         align-items: center;
         display: flex;
+
+        @include MQ ($S) {
+            justify-content: center;
+        }
+
+        @include MQ ($XS) {
+            display: block;
+            text-align: center;
+        }
     }
     
     &__social {
         display: flex;
-
+        
+        @include MQ ($S) {
+            justify-content: center;
+            margin-top: 20px;
+        }
+        
         &-img {
             margin: 0 5px;
         }
     }
-
+    
     &__logo {
         margin-right: 30px;     
         width: 50px;
 
+        @include MQ ($XS) {
+            margin-right: 0;
+        }
+        
         &-img {
             width: 100%;
+
+                @include MQ ($XS) {
+                    width: 50px;
+                }
         }
     }
-
+    
     &__text {
         font: 14px $font-regular;
-
+        
         p {
             margin: 0;
         }
