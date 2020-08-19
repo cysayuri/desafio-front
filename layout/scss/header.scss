@@ -3,10 +3,22 @@
     background-position-x: right;
     height: 750px;
     position: relative;
+    
+    @include MQ($XL) {
+        background-position-x: center;
+    }
+    
+    @include MQ($L) {
+        height: 600px;
+    }
 }
 
 .header {
     height: 650px;
+    
+    @include MQ($L) {
+        height: 530px;
+    }
 }
 
 .menu {
@@ -17,6 +29,10 @@
     
     &__logo-img {
         width: 200px;
+        
+        @include MQ($S) {
+            width: 180px;
+        }
     }
     
     &__links {
@@ -25,13 +41,11 @@
     }
 }
 
-.social {
-    &__item {
-        margin: 0 10px;
-        
-        &-img {
-            width: 35px;
-        }
+.social__item {
+    margin: 0 10px;
+    
+    @include MQ($XS) {
+        margin: 0 5px;
     }
 }
 
@@ -39,4 +53,16 @@
     color: $primary;
     font: 45px $font-light;
     margin: 120px 10px;
+
+    @include MQ($S) {
+        font-size: 40px;
+    }
+
+    @include MQ(660px) {
+        font-size: 35px;
+    }
+
+    @include MQ($XS) {
+        font-size: 30px;
+    }
 }

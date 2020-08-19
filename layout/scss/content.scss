@@ -155,9 +155,12 @@
         font-size: 17px;
     }
 
+    @include MQ($L) {
+        margin-top: 200px;
+    }
+
     @include MQ($M) {
         font-size: 15px;
-        margin-top: 200px;
         padding-left: 40px;
     }
     
