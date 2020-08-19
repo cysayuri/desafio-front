@@ -5,6 +5,18 @@ body {
 
 .wrapper {
     margin: 0 150px;
+    
+    @include MQ($L) {
+        margin: 0 100px;
+    }
+
+    @include MQ($M) {
+        margin: 0 60px;
+    }
+
+    @include MQ($S) {
+        margin: 0 30px;
+    }
 }
 
 .container {

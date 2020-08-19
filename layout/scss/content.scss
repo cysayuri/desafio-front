@@ -1,45 +1,106 @@
 .boxes {
     display: flex;
-    margin: 0 auto;
-    width: 90%;
-    // width: 80%; //depende....??
+    justify-content: space-between;
+    margin: 0 40px;
+    
+    @include MQ($S) {
+        display: block;
+    }
+
+    @include MQ($XL) {
+        margin: 0;
+    }
 
     &__item {
         border-radius: 3px;
         font: 14px $font-regular;
+
+        @include MQ($M) {
+            font-size: 13px;
+        }
         
         &--left {
             color: #fff;
+            width: 40%;
+
+            @include MQ($S) {
+                margin: auto;
+                width: 55%;
+            }
+
+            @include MQ(575px) {
+                width: 60%;
+            }
+
+            @include MQ($XS) {
+                width: 75%;
+            }
         }
         
         &--right {
             background: #fff;
             color: $tertiary;
-            margin-left: 30px;
-            padding: 10px 30px;
+            width: 56%;
+
+            @include MQ($S) {
+                margin: auto;
+                width: 93%;
+            }
         }
     }
     
-    &__img {
+    &__image {
         position: relative;
+
+        &-img {
+            width: 100%;
+        }
+    }
+
+    &__text {
+        padding: 14px 30px;
+
+        @include MQ(1260px) {
+            padding-top: 10px;
+        }
     }
     
     &__desc {
         bottom: 20px;
         margin: 0 30px;
         position: absolute;
+        
+        @include MQ($M) {
+            bottom: 10px;
+        }
     }
     
     &__title {
         margin: 20px 0 5px;
-
+        
         &--left {
             font: 26px $font-regular;
+            
+            @include MQ($XL) {
+                font-size: 24px;
+            }
+            
+            @include MQ($L) {
+                font-size: 20px;
+            }
         }
         
         &--right {
             font: 22px $font-semibold;
             color: $secondary;
+            
+            @include MQ(1260px) {
+                margin-top: 10px;
+            }
+            
+            @include MQ($XL) {
+                font-size: 20px;
+            }
         }
     }
     
@@ -55,6 +116,28 @@
         text-transform: uppercase;
         margin-top: 30px;
         padding: 5px 10px 5px 20px;
+        
+        @include MQ(1260px) {
+            margin-top: 20px;
+            padding: 3px 10px 3px 20px;
+        }
+        
+        @include MQ($M) {
+            margin-top: 10px;
+            font-size: 12px;
+        }
+        
+        &-img {
+            width: 50px;
+
+            @include MQ($XL) {
+                width: 45px;
+            }
+
+            @include MQ($M) {
+                width: 35px;
+            }
+        }
     }
 }
 
@@ -74,12 +157,19 @@
 
     @include MQ($M) {
         font-size: 15px;
+        margin-top: 200px;
         padding-left: 40px;
     }
     
     @include MQ($S) {
         display: block;
+        margin-top: 350px;
         padding: 0;
+        width: 70%;
+    }
+    
+    @include MQ($XS) {
+        margin-top: 400px;
     }
     
     &__text {
