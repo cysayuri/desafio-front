@@ -38,6 +38,11 @@ body {
     margin: 0 30px;
   }
 }
+@media screen and (max-width: 365px) {
+  .wrapper {
+    margin: 0 20px;
+  }
+}
 
 .container {
   position: absolute;
@@ -61,6 +66,11 @@ body {
     height: 600px;
   }
 }
+@media screen and (max-width: 400px) {
+  .bg {
+    height: 550px;
+  }
+}
 
 .header {
   height: 650px;
@@ -68,6 +78,11 @@ body {
 @media screen and (max-width: 1024px) {
   .header {
     height: 530px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .header {
+    height: 480px;
   }
 }
 
@@ -85,6 +100,16 @@ body {
     width: 180px;
   }
 }
+@media screen and (max-width: 480px) {
+  .menu__logo-img {
+    width: 160px;
+  }
+}
+@media screen and (max-width: 285px) {
+  .menu__logo-img {
+    width: 140px;
+  }
+}
 .menu__links {
   display: flex;
   justify-content: center;
@@ -96,6 +121,21 @@ body {
 @media screen and (max-width: 480px) {
   .social__item {
     margin: 0 5px;
+  }
+}
+@media screen and (max-width: 285px) {
+  .social__item {
+    margin: 0 2px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .social__svg {
+    width: 23px;
+  }
+}
+@media screen and (max-width: 285px) {
+  .social__svg {
+    width: 20px;
   }
 }
 
@@ -141,7 +181,7 @@ body {
 }
 @media screen and (max-width: 960px) {
   .boxes__item {
-    font-size: 13px;
+    font-size: 12px;
   }
 }
 .boxes__item--left {
@@ -164,6 +204,16 @@ body {
     width: 75%;
   }
 }
+@media screen and (max-width: 365px) {
+  .boxes__item--left {
+    width: 85%;
+  }
+}
+@media screen and (max-width: 285px) {
+  .boxes__item--left {
+    width: 100%;
+  }
+}
 .boxes__item--right {
   background: #fff;
   color: #666;
@@ -171,8 +221,13 @@ body {
 }
 @media screen and (max-width: 758px) {
   .boxes__item--right {
-    margin: auto;
+    margin: 20px auto 0;
     width: 93%;
+  }
+}
+@media screen and (max-width: 285px) {
+  .boxes__item--right {
+    width: 100%;
   }
 }
 .boxes__image {
@@ -187,6 +242,11 @@ body {
 @media screen and (max-width: 1260px) {
   .boxes__text {
     padding-top: 10px;
+  }
+}
+@media screen and (max-width: 285px) {
+  .boxes__text {
+    padding: 10px;
   }
 }
 .boxes__desc {
@@ -227,6 +287,12 @@ body {
 @media screen and (max-width: 1130px) {
   .boxes__title--right {
     font-size: 20px;
+  }
+}
+@media screen and (max-width: 960px) {
+  .boxes__title--right {
+    font-size: 18px;
+    margin-top: 0;
   }
 }
 .boxes__btn {
@@ -297,14 +363,19 @@ body {
 @media screen and (max-width: 758px) {
   .desc {
     display: block;
-    margin-top: 350px;
+    margin-top: 370px;
     padding: 0;
     width: 70%;
   }
 }
 @media screen and (max-width: 480px) {
   .desc {
-    margin-top: 400px;
+    margin-top: 420px;
+  }
+}
+@media screen and (max-width: 365px) {
+  .desc {
+    margin-top: 450px;
   }
 }
 .desc__text {

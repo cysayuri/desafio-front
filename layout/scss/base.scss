@@ -17,6 +17,10 @@ body {
     @include MQ($S) {
         margin: 0 30px;
     }
+
+    @include MQ(365px) {
+        margin: 0 20px;
+    }
 }
 
 .container {

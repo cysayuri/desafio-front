@@ -16,7 +16,7 @@
         font: 14px $font-regular;
 
         @include MQ($M) {
-            font-size: 13px;
+            font-size: 12px;
         }
         
         &--left {
@@ -35,6 +35,14 @@
             @include MQ($XS) {
                 width: 75%;
             }
+
+            @include MQ(365px) {
+                width: 85%;
+            }
+            
+            @include MQ(285px) {
+                width: 100%;
+            }
         }
         
         &--right {
@@ -43,8 +51,12 @@
             width: 56%;
 
             @include MQ($S) {
-                margin: auto;
+                margin: 20px auto 0;
                 width: 93%;
+            }
+            
+            @include MQ(285px) {
+                width: 100%;
             }
         }
     }
@@ -62,6 +74,10 @@
 
         @include MQ(1260px) {
             padding-top: 10px;
+        }
+        
+        @include MQ(285px) {
+            padding: 10px;
         }
     }
     
@@ -100,6 +116,11 @@
             
             @include MQ($XL) {
                 font-size: 20px;
+            }
+            
+            @include MQ($M) {
+                font-size: 18px;
+                margin-top: 0;
             }
         }
     }
@@ -166,13 +187,17 @@
     
     @include MQ($S) {
         display: block;
-        margin-top: 350px;
+        margin-top: 370px;
         padding: 0;
         width: 70%;
     }
     
     @include MQ($XS) {
-        margin-top: 400px;
+        margin-top: 420px;
+    }
+    
+    @include MQ(365px) {
+        margin-top: 450px;
     }
     
     &__text {
