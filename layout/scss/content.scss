@@ -68,19 +68,60 @@
     padding-left: 100px;
     width: 90%;
 
+    @include MQ($XL) {
+        font-size: 17px;
+    }
+
+    @include MQ($M) {
+        font-size: 15px;
+        padding-left: 40px;
+    }
+    
+    @include MQ($S) {
+        display: block;
+        padding: 0;
+    }
+    
     &__text {
         margin-top: 50px;
         width: 45%;
-    
+        
+        @include MQ($M) {
+            margin-top: 0;
+        }
+        
+        @include MQ($S) {
+            width: 100%;
+        }
+        
         &-title {
             color: $primary;
             font: 35px $font-light;
             margin-bottom: 30px;
+            
+            @include MQ($XL) {
+                font-size: 30px;
+                margin-bottom: 20px;
+            }
+            
+            @include MQ($M) {
+                font-size: 25px;
+                margin-bottom: 15px;
+            }
         }
     }
 
     &__image {
         width: 55%;
+        
+        @include MQ($S) {
+            margin: auto;
+            width: 60%;
+        }
+        
+        @include MQ($XS) {
+            width: 100%;
+        }
         
         &-img {
             width: 100%;

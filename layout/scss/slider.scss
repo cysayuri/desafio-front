@@ -6,6 +6,14 @@
     padding-top: 50px;
     position: relative;
     
+    @include MQ($L) {
+        margin-top: -40px;
+    }
+    
+    @include MQ($M) {
+        margin-top: -20px;
+    }
+    
     &__container {
         margin: auto;
         width: 85%;
@@ -39,8 +47,16 @@
     &__track {
         margin: 0 80px;
         
+        @include MQ(1500px) {
+            margin: 0 90px;
+        }
+        
         @include MQ($L) {
-            margin: 0 65px;
+            margin: 0 70px;
+        }
+        
+        @include MQ($M) {
+            margin: 0 80px;
         }
         
         @include MQ($S) {
